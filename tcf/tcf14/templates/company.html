@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Company Information - {{ company.name }}{% endblock %}
+
+{% block content %}
+	<div class="company-image-bg">
+      {% if company.logo %} <img src="/media/{{ company.logo }}" />
+      {% else %} <div class="spacer"></div> {% endif %}
+    </div>
+
+    <div class="row actions-row">
+      <div class="small-12 columns">
+			{% if company.booth %}
+				<a class="button radius" href="{% url 'map_id' company.booth.number %}"><span class="fi-map"></span>&nbsp; View on Map</a>
+			{% endif %}
+
+			<a class="button radius success" href="#"><span class="fa fa-map-marker"></span>&nbsp; Check In Here</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>{{ company.name }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        {{ company.description|linebreaks }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <table class="contact">
+        {% if company.website %}
+          <tr>
+            <td class="icon"><span class="fa fa-globe"></span></td>
+            <td><a href="{{ company.website }}">{{ company.website }}</a></td>
+          </tr>
+        {% endif %}
+        {% if company.facebook %}
+          <tr>
+            <td class="icon"><span class="fi-social-facebook"></span></td>
+            <td><a href="{{ company.facebook }}">{{ company.facebook }}</a></td>
+          </tr>
+		{% endif %}
+        {% if company.twitter %}
+          <tr>
+            <td class="icon"><span class="fi-social-twitter"></span></td>
+            <td><a href="{{ company.twitter }}">{{ company.twitter }}</a></td>
+          </tr>
+        {% endif %}
+        {% if company.linkedin %}
+          <tr>
+            <td class="icon"><span class="fi-social-linkedin"></span></td>
+            <td><a href="{{ company.linkedin }}">{{ company.linkedin }}</a></td>
+          </tr>
+        {% endif %}
+        {% if company.email %}
+          <tr>
+            <td class="icon"><span class="fi-mail"></span></td>
+            <td><a href="mailto:{{ company.email }}">{{ company.email }}</a></td>
+          </tr>
+        {% endif %}
+        </table>
+      </div>
+    </div>
+{% endblock %}
