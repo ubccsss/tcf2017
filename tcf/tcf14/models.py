@@ -19,7 +19,6 @@ class Booth(models.Model):
 	class Meta:
 		verbose_name=u'Booth'
 		verbose_name_plural=u'Booths'
-		app_label=u'Technical Career Fair 2014 - WebApp'
 
 class Company(models.Model):
 	name = models.CharField(max_length=20, verbose_name=u'Name')
@@ -38,5 +37,4 @@ class Company(models.Model):
 	class Meta:
 		verbose_name=u'Company'
 		verbose_name_plural=u'Companies'
-		app_label=u'Technical Career Fair 2014 - WebApp'
 
