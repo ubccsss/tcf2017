@@ -20,11 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'e_zs2acw_c3y9j+&-ka!)=6p&w55t)+-hbkufzezl)+agg!lep'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tcf.vladzaharia.com']
 
 
 # Application definition
@@ -61,8 +61,12 @@ WSGI_APPLICATION = 'tcf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tcf',
+        'USER': 'tcf',
+        'PASSWORD': '.-R{;[535f}$]>$',
+        'HOST': 'vladzaharia.com'
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -82,8 +86,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_ROOT = 'static'
+STATIC_ROOT = '/srv/www/tcf.vladzaharia.com/static'
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = 'media'
+MEDIA_ROOT = 'srv/www/tcf.vladzaharia.com/media'
 MEDIA_URL= '/media/'
