@@ -4,10 +4,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>UBC Technical Career Fair 2014 - {% block title %}Welcome!{% endblock %}</title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="{% static "img/favicon.png" %}" />
 
   {% load staticfiles %}
 
@@ -21,22 +22,6 @@
   <link rel="stylesheet" href="{% static "css/app.css" %}">
 
   <script src="{% static "js/vendor/custom.modernizr.js" %}"></script>
-
-  <!-- For iOS web apps -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="UBC Technical Career Fair 2014">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <link rel="apple-touch-icon" href="touch-icon-iphone.png60x60">
-  <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
-  <link rel="apple-touch-startup-image" href="/startup.png320x480 640x960">
-
-
-  <!-- For Android (Chrome) web apps -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" sizes="196x196" href="#">
 
   <!-- Page-Specific Header -->
   {% block header %}{% endblock %}
