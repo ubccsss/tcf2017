@@ -136,7 +136,7 @@ ul.off-canvas-list li a div.img {
 	font-family: "Open Sans", Helvetica, sans-serif;
 	display: table;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	padding-top: 0.9rem;
 }
 
@@ -166,15 +166,8 @@ ul.off-canvas-list li a div.img {
 	font-family: "Open Sans", Helvetica, sans-serif;
 	display: table;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	padding-top: 0.9rem;
-	background-color: #900000 !important;
-	border-color: #800000 !important;
-}
-
-.help-button:hover {
-	background-color: #800000 !important;
-	border-color: #700000 !important;
 }
 
 .help-button .button-text {

@@ -8,4 +8,5 @@ urlpatterns = patterns('',
 	url(r'^list$', views.ListView.as_view(), name='list'),
 	url(r'^company/(?P<pk>\d+)/$', views.CompanyView.as_view(), name='company'),
 	url(r'^booth/(?P<id>\d+)/$', views.booth, name='booth'),
+	url(r'^privacy?$', views.privacy, name='privacy'),
 )

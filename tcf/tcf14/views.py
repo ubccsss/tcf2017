@@ -16,6 +16,9 @@ def map(request, id = "0"):
 
 	return render_to_response('map.html', { 'row_data': context, 'highlight': int(id) })
 
+def privacy(request):
+	return render_to_response('privacy.html')
+
 def booth(request, id):
 	booth = get_object_or_404(Booth, id=id)
 
