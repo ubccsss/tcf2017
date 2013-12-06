@@ -21,7 +21,7 @@ class Booth(models.Model):
 		verbose_name_plural=u'Booths'
 
 class Company(models.Model):
-	name = models.CharField(max_length=20, verbose_name=u'Name')
+	name = models.CharField(max_length=40, verbose_name=u'Name')
 	description = models.TextField(verbose_name=u'Description')
 	website = models.CharField(max_length=100, verbose_name=u'Website URL', blank=True, null=True)
 	facebook = models.CharField(max_length=100, verbose_name=u'Facebook URL', blank=True, null=True)
