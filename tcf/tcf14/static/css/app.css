@@ -243,6 +243,56 @@ ul.company-list li a:hover {
 	margin-top: 20px;
 	margin-bottom: -20px;
 	text-align: center;
+	height: 80px;
+}
+
+.actions-row.max {
+	height: 140px;
+}
+
+.actions-row .left {
+	height: 85%;
+}
+
+.actions-row .booth-pre {
+	background-color: #3A6FA7;
+	color: #ffffff;
+	width: 105%;
+	padding: 5px;
+	margin-bottom: -5px;
+	display: inline-table;
+	height: 20%;
+}
+
+.actions-row .booth {
+	margin-top: 5px;
+	background-color: #094b91;
+	color: #ffffff;
+	display: inline-table;
+	width: 105%;
+	height: 80%;
+}
+
+.actions-row .booth-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.actions-row .no-booth {
+	margin-top: 25px;
+}
+
+.actions-row .action-button {
+	width: 100%;
+	height: 60px;
+	margin-bottom: 0px;
+	padding-top: 1.3rem;
+	padding-bottom: 1.3rem;
+}
+
+.actions-row .action-button.success {
+	margin-bottom: 25px !important;
 }
 
 .company-image-bg {
