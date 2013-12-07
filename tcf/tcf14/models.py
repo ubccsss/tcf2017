@@ -22,7 +22,7 @@ class Booth(models.Model):
 
 class Company(models.Model):
 	name = models.CharField(max_length=40, verbose_name=u'Name')
-	description = models.TextField(verbose_name=u'Description')
+	description = models.TextField(verbose_name=u'Description', blank=True, null=True)
 	website = models.CharField(max_length=100, verbose_name=u'Website URL', blank=True, null=True)
 	facebook = models.CharField(max_length=100, verbose_name=u'Facebook URL', blank=True, null=True)
 	twitter = models.CharField(max_length=100, verbose_name=u'Twitter URL', blank=True, null=True)
@@ -38,3 +38,17 @@ class Company(models.Model):
 		verbose_name=u'Company'
 		verbose_name_plural=u'Companies'
 
+class User(models.Model):
+	fname = models.CharField(max_length=40, verbose_name=u'First Name', blank=True, null=True)
+	lname = models.CharField(max_length=40, verbose_name=u'Last Name', blank=True, null=True)
+	email = models.CharField(max_length=200, verbose_name=u'E-Mail Address', blank=True, null=True)
+	phone = models.CharField(max_length=15, verbose_name=u'Phone Number', blank=True, null=True)
+
+class Visit(models.Model):
+	company = models.ForeignKey(Company)
+	ip = models.CharField(max_length=20, verbose_name=u'IP Address')
+	user = models.ForeignKey(User, blank=True, null=True)
+
+class Checkin(models.Model):
+	company = models.ForeignKey(Company)
+	user = models.ForeignKey(User)
