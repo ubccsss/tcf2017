@@ -20,6 +20,9 @@ def map(request, id = "0"):
 
 def privacy(request):
 	return render_to_response('privacy.html')
+	
+def help(request):
+	return render_to_response('help.html')
 
 def booth(request, id):
 	booth = get_object_or_404(Booth, id=id)
