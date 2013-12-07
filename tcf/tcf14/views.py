@@ -51,7 +51,7 @@ class CompanyView(generic.DetailView):
 	def get_object(self, queryset=None):
 		company = super(CompanyView, self).get_object(queryset)
 		
-		if self.user:
+		if self.user.is_authenticated():
 			Visit.objects.create_auth_visit(company, self.user, self.ip)
 		else:
 			Visit.objects.create_visit(company, self.ip)
