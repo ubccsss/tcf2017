@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, get_object_or_404, render_to_response
 from django.http import Http404
 from django.views import generic
+from ipware.ip import get_ip_address_from_request
 from tcf14.models import *
 
 def index(request):
@@ -39,4 +40,20 @@ class ListView(generic.ListView):
 class CompanyView(generic.DetailView):
 	template_name = 'company.html'
 	model = Company
+	user = None
+	ip = None
 
+	def dispatch(self, request, *args, **kwargs):
+		self.user = request.user
+		self.ip = get_ip_address_from_request(request)
+		return super(CompanyView, self).dispatch(request, *args, **kwargs)
+
+	def get_object(self, queryset=None):
+		company = super(CompanyView, self).get_object(queryset)
+		
+		if self.user:
+			Visit.objects.create_auth_visit(company, self.user, self.ip)
+		else:
+			Visit.objects.create_visit(company, self.ip)
+
+		return company

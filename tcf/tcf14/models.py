@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Booth(models.Model):
@@ -38,17 +39,23 @@ class Company(models.Model):
 		verbose_name=u'Company'
 		verbose_name_plural=u'Companies'
 
-class User(models.Model):
-	fname = models.CharField(max_length=40, verbose_name=u'First Name', blank=True, null=True)
-	lname = models.CharField(max_length=40, verbose_name=u'Last Name', blank=True, null=True)
-	email = models.CharField(max_length=200, verbose_name=u'E-Mail Address', blank=True, null=True)
-	phone = models.CharField(max_length=15, verbose_name=u'Phone Number', blank=True, null=True)
+class VisitManager(models.Manager):
+	def create_visit(self, company, ip):
+		visit = self.create(company = company, ip = ip)
+		return visit
+
+	def create_auth_visit(self, company, user, ip):
+		visit = self.create(company = company, user = user, ip = ip)
+		return visit
 
 class Visit(models.Model):
 	company = models.ForeignKey(Company)
 	ip = models.CharField(max_length=20, verbose_name=u'IP Address')
 	user = models.ForeignKey(User, blank=True, null=True)
+	date = models.DateTimeField(auto_now=True)
+	objects = VisitManager()
 
 class Checkin(models.Model):
 	company = models.ForeignKey(Company)
 	user = models.ForeignKey(User)
+	date = models.DateTimeField(auto_now=True)
