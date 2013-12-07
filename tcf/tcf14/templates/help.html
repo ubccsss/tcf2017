@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load staticfiles %}
+
 
 {% block title %}Need Help?{% endblock %}
 
@@ -11,12 +13,12 @@
 			<h3>Find a Volunteer</h3>
 			<p>Volunteers will be walking around the venue, and they're all sporting an awesome TCF14 badge so they're easy to spot.</p>
 
-			<p>IMAGE GOES HERE</p>
+			<p><img src="{% static "img/TCFPerson.png" %}" width="100%" /></p>
 
 			<h3>Visit the Info Booth</h3>
 			<p>This booth is located at the front of the venue, and you probably passed it on the way in. Helpful volunteers will always be stationed here.</p>
 
-			<p>IMAGE GOES HERE</p>
+			<p><img src="{% static "img/TCFBooth.png" %}" width="100%" /></p>
 
 			<h3>Contact Vlad Directly</h3>
 			<p>If you can't find anyone and need help right away, just contact Vlad. He's there to help! <span class="fa fa-smile-o"></span></p>
