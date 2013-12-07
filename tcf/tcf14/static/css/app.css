@@ -332,6 +332,12 @@ ul.company-list li a:hover {
 	margin-bottom: 25px !important;
 }
 
+.actions-row .action-button.disabled {
+	background-color: #333333;
+	margin-bottom: 25px !important;
+}
+
+
 .company-image-bg {
 	background-image: url("../img/companypage.png");
 	background-position: 100%;

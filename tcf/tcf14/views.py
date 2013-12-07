@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, get_object_or_404, render_to_response
 from django.http import Http404
 from django.views import generic
@@ -29,6 +30,13 @@ def booth(request, id):
 	except Company.DoesNotExist:
 		raise Http404
 
+@login_required
+def checkin(request, id):
+	company = get_object_or_404(Company, id=id)
+	user = request.user
+	Checkin.objects.create_checkin(company, user)
+	return redirect('company', pk=id)
+
 class ListView(generic.ListView):
 	template_name = 'list.html'
 	context_object_name = 'company_list'
@@ -42,6 +50,7 @@ class CompanyView(generic.DetailView):
 	model = Company
 	user = None
 	ip = None
+	company = None
 
 	def dispatch(self, request, *args, **kwargs):
 		self.user = request.user
@@ -49,11 +58,25 @@ class CompanyView(generic.DetailView):
 		return super(CompanyView, self).dispatch(request, *args, **kwargs)
 
 	def get_object(self, queryset=None):
-		company = super(CompanyView, self).get_object(queryset)
+		self.company = super(CompanyView, self).get_object(queryset)
 		
 		if self.user.is_authenticated():
-			Visit.objects.create_auth_visit(company, self.user, self.ip)
+			Visit.objects.create_auth_visit(self.company, self.user, self.ip)
 		else:
-			Visit.objects.create_visit(company, self.ip)
+			Visit.objects.create_visit(self.company, self.ip)
 
-		return company
+		return self.company
+
+	def get_context_data(self, **kwargs):
+	    context = super(CompanyView, self).get_context_data(**kwargs)
+
+	    try:
+			if self.user.is_authenticated():
+				checkin = Checkin.objects.filter(company=self.company).get(user=self.user)
+				context['checkin'] = checkin
+			else:
+				context['checkin'] = True
+	    except Checkin.DoesNotExist:
+	    	context['checkin'] = False
+
+	    return context

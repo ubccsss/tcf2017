@@ -55,7 +55,13 @@ class Visit(models.Model):
 	date = models.DateTimeField(auto_now=True)
 	objects = VisitManager()
 
+class CheckinManager(models.Manager):
+	def create_checkin(self, company, user):
+		checkin = self.create(company = company, user = user)
+		return checkin
+
 class Checkin(models.Model):
 	company = models.ForeignKey(Company)
 	user = models.ForeignKey(User)
 	date = models.DateTimeField(auto_now=True)
+	objects = CheckinManager()
