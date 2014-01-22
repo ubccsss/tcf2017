@@ -35,11 +35,11 @@
 				<a class="button action-button" href="{% url 'map_id' company.booth.number %}"><span class="fi-map"></span>&nbsp; View on Map</a>
 			{% endif %}
 
-      {% if checkin %}
+      {# {% if checkin %}
 			  <a class="button disabled action-button" href="#"><span class="fa fa-map-marker"></span>&nbsp; Check In</a>
       {% else %}
         <a class="button success action-button" href="{% url 'checkin' company.id %}"><span class="fa fa-map-marker"></span>&nbsp; Check In</a>
-      {% endif %}
+      {% endif %} #}
       </div>
     </div>
 
