@@ -195,6 +195,10 @@ ul.off-canvas-list li a div.img {
 	font-size: 2.3rem;
 }
 
+.row.add-bottom {
+	margin-bottom: 120px;
+}
+
 .main-section p.center {
 	text-align: center;
 }
