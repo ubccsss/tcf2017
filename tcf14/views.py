@@ -6,7 +6,7 @@ from ipware.ip import get_ip_address_from_request
 from tcf14.models import *
 
 def index(request):
-	return render_to_response('index.html')
+	return render_to_response('mobile/index.html')
 
 def map(request, id = "0"):
 	rows = Booth.objects.values("row").distinct().order_by("row")
@@ -16,13 +16,13 @@ def map(request, id = "0"):
 		orm_data = Booth.objects.filter(row=row_data['row']).order_by("col")
 		context.extend([orm_data])
 
-	return render_to_response('map.html', { 'row_data': context, 'highlight': int(id) })
+	return render_to_response('mobile/map.html', { 'row_data': context, 'highlight': int(id) })
 
 def privacy(request):
-	return render_to_response('privacy.html')
+	return render_to_response('mobile/privacy.html')
 	
 def help(request):
-	return render_to_response('help.html')
+	return render_to_response('mobile/help.html')
 
 def booth(request, id):
 	booth = get_object_or_404(Booth, id=id)
@@ -41,7 +41,7 @@ def checkin(request, id):
 	return redirect('company', pk=id)
 
 class ListView(generic.ListView):
-	template_name = 'list.html'
+	template_name = 'mobile/list.html'
 	context_object_name = 'company_list'
 	model = Company
 
@@ -49,7 +49,7 @@ class ListView(generic.ListView):
 		return Company.objects.all().order_by('name')
 
 class CompanyView(generic.DetailView):
-	template_name = 'company.html'
+	template_name = 'mobile/company.html'
 	model = Company
 	user = None
 	ip = None
