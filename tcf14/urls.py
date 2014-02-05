@@ -1,4 +1,5 @@
-from django.conf.urls import patterns, url, include, redirect
+from django.conf.urls import patterns, url, include
+from django.shortcuts import redirect
 from tcf14 import views
 
 urlpatterns = patterns('',
