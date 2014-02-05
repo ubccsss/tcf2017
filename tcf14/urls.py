@@ -1,7 +1,9 @@
-from django.conf.urls import patterns, url, include
+from django.conf.urls import patterns, url, include, redirect
 from tcf14 import views
 
 urlpatterns = patterns('',
+	url(r'^$', redirect('index')),
+
 	url(r'^mobile/', include(patterns('',
 		# Map
 		url(r'^map/?$', views.map, name='map'),
