@@ -3,9 +3,7 @@ from django.shortcuts import redirect
 from tcf14 import views
 
 urlpatterns = patterns('',
-	url(r'^$', redirect('index')),
-
-	url(r'^mobile/', include(patterns('',
+	url(r'^mobile$', include(patterns('',
 		# Map
 		url(r'^map/?$', views.map, name='map'),
 		url(r'^map/(?P<id>\d+)/$', views.map, name='map_id'),
@@ -21,4 +19,5 @@ urlpatterns = patterns('',
 		url(r'^privacy$', views.privacy, name='privacy'),
 		url(r'^help$', views.help, name='help'),
 		))),
+	url(r'^$', redirect('index')),
 	)
