@@ -1,0 +1,83 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>UBC Technical Career Fair 2014 - {% block title %}Welcome!{% endblock %}</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="{% static "img/favicon.png" %}" />
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+  <link rel="stylesheet" href="{% static "css/foundation.css" %}">
+  <link rel="stylesheet" href="{% static "css/foundation-icons.css" %}">
+  <link rel="stylesheet" href="{% static "css/font-awesome.css" %}">
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="{% static "css/app.css" %}">
+
+  <script src="{% static "js/vendor/custom.modernizr.js" %}"></script>
+
+  <!-- Page-Specific Header -->
+  {% block header %}{% endblock %}
+</head>
+<body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-253443-14', 'ubctcf.com');
+  ga('send', 'pageview');
+
+</script>
+  <div class="off-canvas-wrap scrollable">
+    <div class="inner-wrap">
+      <nav class="tab-bar header">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
+
+        <section class="middle tab-bar-section">
+          <h1 class="title"><a href="{% url 'index' %}"><img src="{% static "img/tcf14header.png" %}" /></a></h1>
+        </section>
+      </nav>
+
+      <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>Menu</label></li>
+          <li><a href="{% url 'index' %}"><div class="img"><span class="fa fa-home"></span></div> <div class="text">Home</div></a></li>
+          <li><a href="{% url 'map' %}"><div class="img"><span class="fi-map"></span></div> <div class="text">Map</div></a></li>
+          <li><a href="{% url 'list' %}"><div class="img"><span class="fi-torsos-all"></span></div> <div class="text">Company List</div></a></li>
+          <li><a href="{% url 'help' %}"><div class="img"><span class="fa fa-question-circle"></span></div> <div class="text">Need Help?</div></a></li>
+          <li><a href="https://www.facebook.com/events/200179110178830/"><div class="img"><span class="fi-social-facebook"></span></div> <div class="text">TCF14 on Facebook</div></a></li>
+          <li><a href="#"><div class="img"><span class="icon-careers"></span></div> <div class="text">UBC CareersOnline</div></a></li>
+          <li><a href="{% url 'privacy' %}"><div class="img"><span class="fa fa-file-text-o"></span></div> <div class="text">Privacy Policy</div></a></li>
+        </ul>
+      </aside>
+
+      <section class="main-section">
+        {% block content %}{% endblock %}
+      </section>
+
+    <a class="exit-off-canvas"></a>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="{% static "js/retina-1.1.0.js" %}"></script>
+  <script src="{% static "js/vendor/jquery.js" %}"></script>
+  <script src="{% static "js/foundation.min.js" %}"></script>
+  <!-- Page-Specific Footer -->
+  {% block footer %}{% endblock %}
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

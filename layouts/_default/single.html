@@ -1,0 +1,13 @@
+{{ if .Params.map }}
+  {{ partial "map.html" . }}
+{{else}}
+	{{ partial "header.html" . }}
+
+	<div class="row">
+		<div class="small-12 columns">
+			{{ .Content }}
+		</div>
+	</div>
+
+	{{ partial "footer.html" . }}
+{{ end }}

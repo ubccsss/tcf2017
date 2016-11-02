@@ -1,0 +1,23 @@
+{{ define "header" }}
+	<!-- For iOS web apps -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="UBC Technical Career Fair 2014">
+	<link rel="apple-touch-icon" href="img/icon-60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icon-76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icon-120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icon-152.png">
+	<link rel="apple-touch-startup-image" href="img/splash.png">
+
+	<!-- For Android (Chrome) web apps -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="196x196" href="img/icon-196.png">
+{{ end }}
+
+{{ partial "header.html" . }}
+
+<a href="/map/" class="button maps-button"><span class="button-text"><span class="fi-map"></span> <br />Map</span></a>
+<a href="/companies/" class="button exhibitor-button"><span class="button-text"><div class="image"><span class="fi-torsos-all"></span></div><div class="text">Company List</div></span></a>
+<a href="/help/" class="button help-button alert"><span class="button-text"><div class="image"><span class="fa fa-question-circle"></span></div><div class="text">Need Help?</div></span></a>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,92 @@
+
+{{ define "footer" }}
+<script src="/js/jquery.fittext.js"></script>
+<script>
+$(function() {
+  //var width = $(".booth").width();
+  //$(".booth").css("height", width);
+  //$(".booth").css("width", width);
+  $(".booth-text").fitText(0.2, { maxFontSize: '70px' });
+});
+</script>
+{{ end }}
+
+{{ partial "header.html" . }}
+
+<div class="company-image-bg">
+  {{ if isset .Params "logo" }}
+  <img src="/media/{{ .Params.logo }}" />
+  {{ else }}
+  <div class="spacer"></div>
+  {{ end }}
+</div>
+
+<div class="row actions-row {{ if isset .Params "booth" }}max{{end}}">
+  <div class="small-4 columns left">
+    {{ if isset .Params "booth" }}
+    <div class="booth-pre">Booth</div>
+    <div class="booth"><span class="booth-text">{{.Params.booth }}</span></div>
+    {{ else }}
+    <div class="no-booth">No Booth</div>
+    {{ end }}
+  </div>
+  <div class="small-8 columns right">
+    {{ if isset .Params "booth" }}
+    <a class="button action-button" href="/map/#{{.Params.booth}}"><span class="fi-map"></span>&nbsp; View on Map</a>
+    {{ end }}
+
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>{{ .Title }}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <table class="contact">
+      {{ if isset .Params "website" }}
+      <tr>
+        <td class="icon"><span class="fa fa-globe"></span></td>
+        <td><a href="{{ .Params.website }}">{{ .Params.website }}</a></td>
+      </tr>
+      {{end}}
+      {{ if isset .Params "facebook" }}
+      <tr>
+        <td class="icon"><span class="fi-social-facebook"></span></td>
+        <td><a href="{{ .Params.facebook }}">Facebook Link</a></td>
+      </tr>
+      {{end}}
+      {{ if isset .Params "twitter" }}
+      <tr>
+        <td class="icon"><span class="fi-social-twitter"></span></td>
+        <td><a href="{{ .Params.twitter }}">Twitter Link</a></td>
+      </tr>
+      {{end}}
+      {{ if isset .Params "linkedin" }}
+      <tr>
+        <td class="icon"><span class="fi-social-linkedin"></span></td>
+        <td><a href="{{ .Params.linkedin }}">LinkedIn Link</a></td>
+      </tr>
+      {{end}}
+      {{ if isset .Params "email" }}
+      <tr>
+        <td class="icon"><span class="fa fa-envelope-o"></span></td>
+        <td><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></td>
+      </tr>
+      {{end}}
+    </table>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

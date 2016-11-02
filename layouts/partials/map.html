@@ -1,0 +1,41 @@
+{{define "title"}}Venue Map{{end}}
+
+{{partial "header.html" .}}
+
+{{define "footer" }}
+<script src="/js/jquery.fittext.js"></script>
+<script>
+$(function() {
+});
+</script>
+{{end}}
+
+<div class="map-instructions">
+	<div class="map-instructions-text">
+		Please select a booth number to get more information about the company.
+	</div>
+</div>
+
+<div class="map-container">
+	<div class="map-row">
+	{{ $pages := where .Site.Pages "Section" "companies" }}
+	{{ $booths := 52 }}
+	{{ $rows := 4 }}
+	{{ $columns := div $booths $rows }}
+	{{ range (seq 0 (sub $columns 1)) }}
+		{{ $y := . }}
+		{{ range (seq 0 (sub $rows 1)) }}
+			{{ $x := . }}
+			{{ $i := add (add (mul $x $columns) $y) 1 }}
+			{{ $is := printf "%d" $i }}
+			{{ $page := (index (where $pages "Params.booth" $is) 0)}}
+			<a id="{{$i}}" class="booth {{if not $page}}disabled{{end}}" href="{{$page.Permalink}}">
+				<div class="booth-text">{{ $i }}</div>
+				<div class="booth-title">{{ $page.Title }}</div>
+			</a>
+    {{end}}
+	{{end}}
+	</div>
+</div>
+
+{{partial "footer.html" .}}

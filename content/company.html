@@ -1,0 +1,96 @@
+{% extends "mobile/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Company Information - {{ company.name }}{% endblock %}
+
+{% block footer %}
+  <script src="{% static "js/jquery.fittext.js" %}"></script>
+  <script>
+    $(function() {
+      //var width = $(".booth").width();
+      //$(".booth").css("height", width);
+      //$(".booth").css("width", width);
+      $(".booth-text").fitText(0.2, { maxFontSize: '70px' });
+    });
+  </script>
+{% endblock %}
+
+{% block content %}
+	<div class="company-image-bg">
+      {% if company.logo %} <img src="/media/{{ company.logo }}" />
+      {% else %} <div class="spacer"></div> {% endif %}
+    </div>
+
+    <div class="row actions-row {% if company.booth %}max{% endif %}">
+      <div class="small-4 columns left">
+      {% if company.booth %}
+        <div class="booth-pre">Booth</div>
+        <div class="booth"><span class="booth-text">{{ company.booth.number }}</span></div>
+      {% else %}
+        <div class="no-booth">No Booth</div>
+      {% endif %}
+      </div>
+      <div class="small-8 columns right">
+			{% if company.booth %}
+				<a class="button action-button" href="{% url 'map_id' company.booth.number %}"><span class="fi-map"></span>&nbsp; View on Map</a>
+			{% endif %}
+
+      <!--{% if checkin %}
+			  <a class="button disabled action-button" href="#"><span class="fa fa-map-marker"></span>&nbsp; Check In</a>
+      {% else %}
+        <a class="button success action-button" href="{% url 'checkin' company.id %}"><span class="fa fa-map-marker"></span>&nbsp; Check In</a>
+      {% endif %}-->
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>{{ company.name }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        {{ company.description|linebreaks }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <table class="contact">
+        {% if company.website %}
+          <tr>
+            <td class="icon"><span class="fa fa-globe"></span></td>
+            <td><a href="{{ company.website }}">{{ company.website }}</a></td>
+          </tr>
+        {% endif %}
+        {% if company.facebook %}
+          <tr>
+            <td class="icon"><span class="fi-social-facebook"></span></td>
+            <td><a href="{{ company.facebook }}">Facebook Link</a></td>
+          </tr>
+		{% endif %}
+        {% if company.twitter %}
+          <tr>
+            <td class="icon"><span class="fi-social-twitter"></span></td>
+            <td><a href="{{ company.twitter }}">Twitter Link</a></td>
+          </tr>
+        {% endif %}
+        {% if company.linkedin %}
+          <tr>
+            <td class="icon"><span class="fi-social-linkedin"></span></td>
+            <td><a href="{{ company.linkedin }}">LinkedIn Link</a></td>
+          </tr>
+        {% endif %}
+        {% if company.email %}
+          <tr>
+            <td class="icon"><span class="fa fa-envelope-o"></span></td>
+            <td><a href="mailto:{{ company.email }}">{{ company.email }}</a></td>
+          </tr>
+        {% endif %}
+        </table>
+      </div>
+    </div>
+{% endblock %}

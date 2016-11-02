@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+
+<ul class="company-list">
+	{{ range .Data.Pages }}
+		<li><a href="{{ .Permalink }}">
+				{{ .Title }}
+				{{if isset .Params "booth"}}
+					- Booth {{ .Params.booth }}
+				{{end}}
+		</a></li>
+	{{end}}
+</ul>
+
+{{ partial "footer" . }}
