@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://ubctcf.org/</loc>
+    <lastmod>2016-11-02T19:46:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.org/privacy/</loc>
+    <lastmod>2016-11-02T19:46:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.org/map/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.org/companies/company-a/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.org/companies/company-b/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.org/help/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.org/companies/tristan-rice/</loc>
+  </url>
+  
+</urlset>
