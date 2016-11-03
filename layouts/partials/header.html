@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>UBC Technical Career Fair 2014 - {{block "title" .}}{{.Title}}{{end}}</title>
+  <title>{{block "title" .}}{{.Title}}{{end}} - {{.Site.Title}}</title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="/img/favicon.png" />
@@ -44,7 +44,9 @@
         </section>
 
         <section class="middle tab-bar-section">
-          <h1 class="title"><a href="/"><img src="/img/tcf14header.png" /></a></h1>
+          <h1 class="title"><a href="/">
+            <span class="logo"><b>TCF</b>{{.Site.Params.year}}</span>
+          </a></h1>
         </section>
       </nav>
 
@@ -57,7 +59,7 @@
           <li><a href="/help/"><div class="img"><span class="fa fa-question-circle"></span></div> <div class="text">Need Help?</div></a></li>
           <li><a href="https://www.facebook.com/events/200179110178830/"><div
                 class="img"><span class="fi-social-facebook"></span></div> <div
-                class="text">TCF17 on Facebook</div></a></li>
+                class="text">{{.Site.Params.shorttitle}} on Facebook</div></a></li>
           <li><a href="#"><div class="img"><span class="icon-careers"></span></div> <div class="text">UBC CareersOnline</div></a></li>
           <li><a href="/privacy/"><div class="img"><span class="fa fa-file-text-o"></span></div> <div class="text">Privacy Policy</div></a></li>
         </ul>

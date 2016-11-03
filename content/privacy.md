@@ -7,7 +7,7 @@ date: 2016-11-02T19:46:36Z
 
 ## Data Collected
 
-All activities performed on the TCF14 webapp will be logged anonymously through Google Analytics. No personally identifiable information is ever recorded through this method.
+All activities performed on the {{.Site.Params.shorttitle}} webapp will be logged anonymously through Google Analytics. No personally identifiable information is ever recorded through this method.
 
 Additionally, all hits to company pages will be logged internally, and will be associated with an IP address. If logged in, we will additionally record this hit with your user account associated with it. This information is used solely for the purposes of improving the system and event, and is not shared with any third parties. However, any data recorded while not logged in is not linked to any user account, and will continue to remain anonymized.
 
@@ -25,4 +25,4 @@ All recorded data is used solely by the UBC Technical Career Fair committee for 
 
 ## Data Removal
 
-If you do not feel comfortable with the terms of this privacy policy, you may request removal of your data by emailing vladzaharia@gmail.com. Please include all relevant information, including your user account and IP addresses used to access the system. Although we will make all possible efforts to remove data from the system, we cannot guarantee full removal of data, especially when not all available information is provided.
+If you do not feel comfortable with the terms of this privacy policy, you may request removal of your data by emailing vpx@ubccsss.org. Please include all relevant information, including your user account and IP addresses used to access the system. Although we will make all possible efforts to remove data from the system, we cannot guarantee full removal of data, especially when not all available information is provided.
