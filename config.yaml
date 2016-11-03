@@ -5,3 +5,5 @@ title: UBC Technical Career Fair 2017
 params:
   shorttitle: TCF17
   year: 17
+
+publishdir: docs
