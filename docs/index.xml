@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UBC Technical Career Fair 2017</title>
-    <link>https://ubctcf.org/index.xml</link>
+    <link>https://ubctcf.com/index.xml</link>
     <description>Recent content on UBC Technical Career Fair 2017</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Nov 2016 19:46:36 +0000</lastBuildDate>
-    <atom:link href="https://ubctcf.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ubctcf.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://ubctcf.org/privacy/</link>
+      <link>https://ubctcf.com/privacy/</link>
       <pubDate>Wed, 02 Nov 2016 19:46:36 +0000</pubDate>
       
-      <guid>https://ubctcf.org/privacy/</guid>
+      <guid>https://ubctcf.com/privacy/</guid>
       <description>
 
 &lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;
@@ -45,39 +45,39 @@
     
     <item>
       <title></title>
-      <link>https://ubctcf.org/map/</link>
+      <link>https://ubctcf.com/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.org/map/</guid>
+      <guid>https://ubctcf.com/map/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Company A</title>
-      <link>https://ubctcf.org/companies/company-a/</link>
+      <link>https://ubctcf.com/companies/company-a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.org/companies/company-a/</guid>
+      <guid>https://ubctcf.com/companies/company-a/</guid>
       <description>&lt;p&gt;Some company.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Company B</title>
-      <link>https://ubctcf.org/companies/company-b/</link>
+      <link>https://ubctcf.com/companies/company-b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.org/companies/company-b/</guid>
+      <guid>https://ubctcf.com/companies/company-b/</guid>
       <description>&lt;p&gt;Company B&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Need Help?</title>
-      <link>https://ubctcf.org/help/</link>
+      <link>https://ubctcf.com/help/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.org/help/</guid>
+      <guid>https://ubctcf.com/help/</guid>
       <description>
 
 &lt;h1 id=&#34;need-help&#34;&gt;Need Help?&lt;/h1&gt;
@@ -88,13 +88,13 @@
 
 &lt;p&gt;Volunteers will be walking around the venue, and they&amp;rsquo;re all sporting an awesome TCF14 badge so they&amp;rsquo;re easy to spot.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://ubctcf.org/img/TCFPerson.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ubctcf.com/img/TCFPerson.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;visit-the-info-booth&#34;&gt;Visit the Info Booth&lt;/h3&gt;
 
 &lt;p&gt;This booth is located at the front of the venue, and you probably passed it on the way in. Helpful volunteers will always be stationed here.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://ubctcf.org/img/TCFBooth.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ubctcf.com/img/TCFBooth.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;contact-jerome-directly&#34;&gt;Contact Jerome Directly&lt;/h3&gt;
 
@@ -111,10 +111,10 @@
     
     <item>
       <title>Tristan Rice</title>
-      <link>https://ubctcf.org/companies/tristan-rice/</link>
+      <link>https://ubctcf.com/companies/tristan-rice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.org/companies/tristan-rice/</guid>
+      <guid>https://ubctcf.com/companies/tristan-rice/</guid>
       <description>&lt;p&gt;Tristan Rice is a company. Yeah&amp;hellip;.&lt;/p&gt;
 </description>
     </item>

@@ -2,7 +2,7 @@
 
 <ul class="company-list">
 	{{ range .Data.Pages }}
-		<li><a href="{{ .Permalink }}">
+		<li><a href="{{ .RelPermalink }}">
 				{{ .Title }}
 				{{if isset .Params "booth"}}
 					- Booth {{ .Params.booth }}

@@ -21,7 +21,7 @@
 			{{ $i := add (add (mul $x $columns) $y) 1 }}
 			{{ $is := printf "%d" $i }}
 			{{ $page := (index (where $pages "Params.booth" $is) 0)}}
-			<a id="{{$i}}" class="booth {{if not $page}}disabled{{end}}" href="{{$page.Permalink}}">
+			<a id="{{$i}}" class="booth {{if not $page}}disabled{{end}}" href="{{$page.RelPermalink}}">
 				<div class="booth-text">{{ $i }}</div>
 				<div class="booth-title">{{ $page.Title }}</div>
 			</a>
