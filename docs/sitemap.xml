@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ubctcf.com/</loc>
-    <lastmod>2016-11-02T19:46:36+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ubctcf.com/privacy/</loc>
     <lastmod>2016-11-02T19:46:36+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ubctcf.com/map/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.com/companies/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -29,6 +29,12 @@
   
   <url>
     <loc>https://ubctcf.com/companies/tristan-rice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ubctcf.com/</loc>
+    <lastmod>2016-11-02T19:46:36+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

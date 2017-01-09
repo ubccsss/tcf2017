@@ -21,7 +21,7 @@
 
 &lt;h2 id=&#34;data-collected&#34;&gt;Data Collected&lt;/h2&gt;
 
-&lt;p&gt;All activities performed on the {{.Site.Params.shorttitle}} webapp will be logged anonymously through Google Analytics. No personally identifiable information is ever recorded through this method.&lt;/p&gt;
+&lt;p&gt;All activities performed on the TCF webapp will be logged anonymously through Google Analytics. No personally identifiable information is ever recorded through this method.&lt;/p&gt;
 
 &lt;p&gt;Additionally, all hits to company pages will be logged internally, and will be associated with an IP address. If logged in, we will additionally record this hit with your user account associated with it. This information is used solely for the purposes of improving the system and event, and is not shared with any third parties. However, any data recorded while not logged in is not linked to any user account, and will continue to remain anonymized.&lt;/p&gt;
 
@@ -86,7 +86,7 @@
 
 &lt;h3 id=&#34;find-a-volunteer&#34;&gt;Find a Volunteer&lt;/h3&gt;
 
-&lt;p&gt;Volunteers will be walking around the venue, and they&amp;rsquo;re all sporting an awesome TCF14 badge so they&amp;rsquo;re easy to spot.&lt;/p&gt;
+&lt;p&gt;Volunteers will be walking around the venue, and they&amp;rsquo;re all sporting an awesome TCF badge so they&amp;rsquo;re easy to spot.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://ubctcf.com/img/TCFPerson.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 

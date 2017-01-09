@@ -8,7 +8,7 @@ If you need any assistance during the event, you have several options
 
 ### Find a Volunteer
 
-Volunteers will be walking around the venue, and they're all sporting an awesome TCF14 badge so they're easy to spot.
+Volunteers will be walking around the venue, and they're all sporting an awesome TCF badge so they're easy to spot.
 
 <img src="/img/TCFPerson.png" width="100%" />
 
