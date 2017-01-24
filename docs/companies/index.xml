@@ -9,32 +9,180 @@
     <atom:link href="https://ubctcf.com/companies/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Company A</title>
-      <link>https://ubctcf.com/companies/company-a/</link>
+      <title>A Thinking Ape</title>
+      <link>https://ubctcf.com/companies/a-thinking-ape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.com/companies/company-a/</guid>
-      <description>&lt;p&gt;Some company.&lt;/p&gt;
+      <guid>https://ubctcf.com/companies/a-thinking-ape/</guid>
+      <description>&lt;p&gt;A Thinking Ape is a small yet driven team that is dedicated to building strong mobile communities.&lt;/p&gt;
+
+&lt;p&gt;With our collaborative approach to product design, we ensure the best ideas get the space they need to grow.&lt;/p&gt;
+
+&lt;p&gt;Our team seeks out intuitive solutions to complex problems, and maintains strong ties to our hacker culture.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Company B</title>
-      <link>https://ubctcf.com/companies/company-b/</link>
+      <title>Absolute Software</title>
+      <link>https://ubctcf.com/companies/absolute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.com/companies/company-b/</guid>
-      <description>&lt;p&gt;Company B&lt;/p&gt;
+      <guid>https://ubctcf.com/companies/absolute/</guid>
+      <description>&lt;p&gt;Absolute provides persistent endpoint security and data risk management solutions for computers, tablets, and smartphones. Our customers rely on us to provide them with a unique and trusted layer of security so they can manage mobility while remaining firmly in control. Our Persistence technology is embedded into the core of most devices at the factory. Once activated, it provides you with comprehensive visibility into all of your devices enabling you to confidently manage mobility, investigate potential threats, and take action if a security incident occurs. No other technology can do this.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Tristan Rice</title>
-      <link>https://ubctcf.com/companies/tristan-rice/</link>
+      <title>Amazon</title>
+      <link>https://ubctcf.com/companies/amazon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ubctcf.com/companies/tristan-rice/</guid>
-      <description>&lt;p&gt;Tristan Rice is a company. Yeah&amp;hellip;.&lt;/p&gt;
+      <guid>https://ubctcf.com/companies/amazon/</guid>
+      <description>&lt;p&gt;At Amazon, our evolution has been driven by the spirit of innovation that is part of our DNA. As a new college graduate or intern, you can have multiple opportunities to innovate and solve real-world, complex technical and business problems as you join us on our journey.
+We strive to hire the brightest minds from universities around the globe, and have various career opportunities available for undergraduates and advanced degree students with diverse academic backgrounds.
+The work environment here is fast-paced and continually evolving, and every Amazonian is passionate about ownership and delivering results for the company.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arista Networks</title>
+      <link>https://ubctcf.com/companies/arista-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/arista-networks/</guid>
+      <description>&lt;p&gt;Arista Networks was founded to deliver cloud networking solutions for large data center and computing environments. Arista offers a broad portfolio of Gigabit Ethernet solutions including 1,10 and 40 GbE switches that redefine network architectures, bring extensibility to networking and dramatically change the price/performance of data center networks. At the core of Arista&amp;rsquo;s platform is EOS (Extensible Operating System), the world&amp;rsquo;s most advanced network operating system, designed to build software defined cloud networks. EOS provides a single image consistency across hardware platforms and a modern core architecture enabling in-service upgrades and application extensibility.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avigilon</title>
+      <link>https://ubctcf.com/companies/avigilon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/avigilon/</guid>
+      <description>&lt;p&gt;Pronunciation: a-vigil-on
+Definition: To be perpetually alert and watchful&lt;/p&gt;
+
+&lt;p&gt;Avigilon designs, develops, and manufactures video analytics, network video management software and hardware, surveillance cameras, and access control solutions. Avigilon&amp;rsquo;s solutions have been installed at thousands of customer sites, including school campuses, transportation systems, healthcare centers, public venues, critical infrastructure, prisons, factories, casinos, airports, financial institutions, government facilities, and retailer&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Benevity Inc.</title>
+      <link>https://ubctcf.com/companies/benevity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/benevity/</guid>
+      <description>&lt;p&gt;Better Work and a Better World: at Benevity that’s what we’re all about. We’re a software company in the business of doing good, building better ways for companies to connect with their customers and employees around causes (we make “doing well by doing good” more than just a tagline!). We’re growing fast and looking for more great people to join us.&lt;/p&gt;
+
+&lt;p&gt;We’re not Bono, just a passionate crew of workhorses out to change the world. We have that fun, flexible tech culture that people love (ok, some people – you know who you are!) – and we have a heart. We’re a registered B Corporation, which means we’re part of a new breed of companies committed to higher social and environmental standards.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best Buy Canada</title>
+      <link>https://ubctcf.com/companies/best-buy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/best-buy/</guid>
+      <description>&lt;p&gt;Best Buy Canada is one of the largest omni-channel retailers of consumer electronics, computers and entertainment products, related accessories and services in Canada.&lt;/p&gt;
+
+&lt;p&gt;Our Canadian Corporate Head Quarters is 140,000 square feet, two stories high and is designed as an open office environment where teamwork is encouraged. Being located in Burnaby B.C. offers a great lifestyle living on the West Coast of Canada. With great food and Starbucks coffee made available in our subsidized cafeteria, a full fitness center on-site, a nearby outdoor park with running paths along the scenic Fraser River, free shuttle and parking, and much more, the energy of Best Buy Canada, Ltd. is undeniable.&lt;/p&gt;
+
+&lt;p&gt;Best Buy Canada Ltd. operates as a wholly owned subsidiary of Best Buy Co., Inc. (NYSE:BBY).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Broadridge Financial Solutions, Inc</title>
+      <link>https://ubctcf.com/companies/broadridge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/broadridge/</guid>
+      <description>&lt;p&gt;Broadridge is the leading provider of investor communications, technology-driven solutions, and data and analytics for wealth management, asset management, capital markets firms, and corporations. We help clients drive operational excellence to manage risk, accelerate growth, and deliver real business value. Broadridge&amp;rsquo;s technology-driven solutions power the entire investment lifecycle, enabling clients to successfully manage the complexity of today’s capital markets and communicate with customers and investors.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Brock Solutions</title>
+      <link>https://ubctcf.com/companies/brock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/brock/</guid>
+      <description>&lt;p&gt;Brock Solutions is an engineering solutions and professional services company that forges lasting relationships with customers globally to implement real-time operational solutions, as measured by the success of our customers, through a growing, networked organization that deploys passionate, innovative teams.&lt;/p&gt;
+
+&lt;p&gt;Brock is a leader in the industrial engineering solution space, specializing in software development and controls automation all around the world.&lt;/p&gt;
+
+&lt;p&gt;Developing leading advanced solutions first depends on developing a great team of people. At Brock, you will be part of approximately a 400 person team that spans across Canada and the U.S. and has been in business for over 30 years.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Capital One</title>
+      <link>https://ubctcf.com/companies/capital-one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/capital-one/</guid>
+      <description>&lt;p&gt;We are defining the next generation of banking in Canada, challenging the brick and mortar status quo. We’re looking for well-rounded and passionate students to join our high performing culture focused on customer-centric design and data driven problem solving.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Clio</title>
+      <link>https://ubctcf.com/companies/clio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/clio/</guid>
+      <description>&lt;p&gt;Clio is the most comprehensive cloud-based practice management platform for the legal industry. With the help of the cloud, Clio eases the process of time tracking, billing, administration, and collaboration for law firms of all sizes. Based in Vancouver, B.C. and launched in 2008, Clio is used by legal professionals in over 50 countries. Clio has raised $27 million from investors including Bessemer Venture Partners. Learn more at www.clio.com.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Communications Security Establishment</title>
+      <link>https://ubctcf.com/companies/cse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/cse/</guid>
+      <description>&lt;p&gt;The Communications Security Establishment is one of Canada’s key security and intelligence organizations. For 70 years CSE has been committed to the safety and security of Canada and Canadians. We focus on collecting foreign signals intelligence to protect Canada against threats, and on helping protect the computer networks and information of greatest importance to Canada. We also provide technical assistance to federal law enforcement and security organizations
+Our work helps to ensure our nation’s security and stability; protecting against foreign-based terrorism and espionage, cyber-attacks, and other serious threats. It also supports decision-making in the fields of national defence and foreign policy, providing a better understanding of global events and helping to further Canada&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Copperleaf</title>
+      <link>https://ubctcf.com/companies/copperleaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/copperleaf/</guid>
+      <description>&lt;p&gt;Building a better world one decision at a time.
+Copperleaf provides Decision Analytics to companies facing the challenges of managing critical infrastructure. Our enterprise software solutions leverage operational and financial data to help our clients make investment decisions that deliver the highest value to their stakeholders. Copperleaf’s dynamic risk and value framework, predictive analytics, state-of-the-art optimization, and interactive visualizations empower businesses to make complex investment decisions with confidence. In 2016, Canadian Business Magazine named Copperleaf as one of the top 20 fastest-growing software companies in Canada. Headquartered in Vancouver, our solutions are distributed and supported by regional staff and partners worldwide.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>East Side Games</title>
+      <link>https://ubctcf.com/companies/east-side-games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/east-side-games/</guid>
+      <description>&lt;p&gt;East Side Games is a proudly independent and profitable game studio creating humorous and addicting games for mobile and social platforms.&lt;/p&gt;
+
+&lt;p&gt;We have a collaborative, creative, and fun culture that is focused on building hit titles in a great work environment. Our talented, highly-motivated team believes in constantly improving; we are not afraid to take ownership and meet challenges head-on in order to reach our goals.&lt;/p&gt;
+
+&lt;p&gt;Purpose-built technology infrastructure powers our rapid, iterative prototyping, based directly on audience feedback. These tools and analytics engines allow us to take design ideas to playable releases in days rather than months.
+Our games fund all our new projects, and everyone who works here has a direct impact on the day-to-day business.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Finger Food Studios</title>
+      <link>https://ubctcf.com/companies/finger-food-studios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ubctcf.com/companies/finger-food-studios/</guid>
+      <description>&lt;p&gt;Finger Food is a world-class technology company that designs and develops immersive Mobile, MR/AR/VR, Internet of Things, Machine Learning, Cloud and Entertainment products. Our work transforms industries. We are passionate about embracing and innovating bleeding-edge technological opportunities and delivering products that achieve tangible ROI in real-world scenarios.&lt;/p&gt;
+
+&lt;p&gt;We work with iOS, Android, Microsoft HoloLens, Tango, Oculus, HTC Vive, and Unity.&lt;/p&gt;
 </description>
     </item>
     
