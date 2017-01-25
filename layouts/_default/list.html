@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 
 <ul class="company-list">
-	{{ range .Data.Pages }}
+	{{ range sort .Data.Pages "RelPermalink" }}
 		<li><a href="{{ .RelPermalink }}">
 				{{ .Title }}
 				{{if isset .Params "booth"}}
