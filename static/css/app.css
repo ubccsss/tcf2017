@@ -289,13 +289,20 @@ ul.company-list li a:hover {
 
 .map-container .booth-text {
     line-height: 20vmin;
-    font-size: 32px;
+    font-size: 5vmin;
 }
 .map-container .booth-title {
     position: absolute;
-    bottom: 1em;
-    left: 0;
-    right: 0;
+    bottom: 2vmin;
+    left: 0.5vmin;
+    right: 0.5vmin;
+    background-color: rgba(9, 75, 145, 0.5);
+}
+
+@media(max-width: 600px) {
+    .map-container .booth-title {
+        font-size: 2.5vmin;
+    }
 }
 
 .map-container .col2,
@@ -306,6 +313,11 @@ ul.company-list li a:hover {
 .map-container .col1,
 .map-container .col3 {
     margin-left: -3px;
+}
+.map-label {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 1em;
 }
 
 /* COMPANY PAGE */
