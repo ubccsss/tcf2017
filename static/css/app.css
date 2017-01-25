@@ -273,6 +273,9 @@ ul.company-list li a:hover {
 .map-container .booth:target {
     background-color: #900000;
 }
+.map-container .booth:target .booth-title {
+    background-color: rgba(144, 0, 0, 0.5);
+}
 
 .map-container .booth.empty {
     background-color: #ffffff;
